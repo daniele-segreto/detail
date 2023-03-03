@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">PRODOTTO</th>
+      <th scope="col">DESCRIZIONE</th>
+      <th scope="col">DISPONIBILE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products" [class.selected]="product === selectedProduct" class="select-yw" (click)="onSelect(product)">
+      <th scope="row" class="">{{product.id}}</th>
+      <td>{{product.name | uppercase}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.available}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-product-detail [product]="selectedProduct"></app-product-detail>

@@ -1,0 +1,18 @@
+<div *ngIf="product" id="product-name">
+  <!-- Dettaglio -->
+  <div class="card-group">
+    <div class="card">
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title">{{product.name | uppercase}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eos placeat culpa sit, nobis reprehenderit modi obcaecati dolor in dolore? Praesentium velit possimus ab quisquam quo quibusdam, labore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis officiis dolores expedita voluptas, sed explicabo veniam rerum velit labore tempora quas non maiores eveniet voluptatum ipsa dignissimos odit. Vel!</p>
+        <p>.......</p>
+        <p>.......</p>
+        <p>id = {{product.id}}</p>
+        <p>disponibilità = {{product.available}}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
